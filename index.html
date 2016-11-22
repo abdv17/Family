@@ -19,15 +19,15 @@
         data.addColumn('string', 'ToolTip');
         // For each orgchart box, provide the name, manager, and tooltip to show.
         data.addRows([
-          [{v:'Tirupathaiyya,Chennamma', f:'Tirupathaiyya,Chennamma<div style="color:red; font-style:italic">Jejiya,Jeji</div>'},
+          [{v:'Tirupathaiyya,Chennamma', f:'Tirupathaiyya,Chennamma<div style="color:red; font-style:italic"><button onclick="JejiyaJeji()" type="button" style="color:Red";>Jejiya,Jeji</button></div>'},
            '', 'The President'],
-          [{v:'Prasad,Chennamma', f:'Prasad,Chennamma<div style="color:red; font-style:italic">Pedanana,Pedamma</div>'},
+          [{v:'Prasad,Chennamma', f:'Prasad,Chennamma<div style="color:red; font-style:italic"><button onclick="PedananaPedamma()" type="button" style="color:Red";>Pedanana,Pedamma</button></div>'},
            'Tirupathaiyya,Chennamma', 'Pedanana,Pedamma'],
-		  [{v:'Lakshmi Narayana,Venkata Narayanamma', f:'Lakshmi Narayana,Venkata Narayanamma<div style="color:red; font-style:italic">Daddy,Mummy</div>'},
+		  [{v:'Lakshmi Narayana,Venkata Narayanamma', f:'Lakshmi Narayana,Venkata Narayanamma<div style="color:red; font-style:italic"><button onclick="DaddyMummy()" type="button" style="color:Red";>Daddy,Mummy</button></div>'},
            'Tirupathaiyya,Chennamma', 'Daddy,Mummy'],
-		  [{v:'Venkateswarlu,Indiramma', f:'Venkateswarlu,Indiramma<div style="color:red; font-style:italic">NLR Babai,Indira Pinni</div>'},
+		  [{v:'Venkateswarlu,Indiramma', f:'Venkateswarlu,Indiramma<div style="color:red; font-style:italic"><button onclick="NLRbabaipinni()" type="button" style="color:Red";>NLR Babai,Indira Pinni</button></div>'},
            'Tirupathaiyya,Chennamma', 'NLR babai,,Indira Pinni'],
-		  [{v:'Rajendra,Satyavathi', f:'Rajendra,Satyavathi<div style="color:red; font-style:italic">Raja babai,Satyavathi Pinni</div>'},
+		  [{v:'Rajendra,Satyavathi', f:'Rajendra,Satyavathi<div style="color:red; font-style:italic"><button onclick="Rajababaipinni()" type="button" style="color:Red";>Raja Babai,Satyavathi Pinni</button></div>'},
            'Tirupathaiyya,Chennamma', 'Raja Babai,Satyavathi Pinni'],
 		   
 		  [{v:'Venu Gopal,Manoji', f:'Venu,Manoji<div style="color:red; font-style:italic">Venu Annaya,Vadina</div>'},
@@ -56,6 +56,21 @@
         // Draw the chart, setting the allowHtml option to true for the tooltips.
         chart.draw(data, {allowHtml:true});
       }
+		function JejiyaJeji() {
+		document.getElementById("demo").innerHTML = "WIP: 2 Paras should come about jejiya and jeji";
+		}
+		function PedananaPedamma() {
+		document.getElementById("demo").innerHTML = "WIP: 2 Paras should come about Pedanana and Pedamma";
+		}
+		function DaddyMummy() {
+		document.getElementById("demo").innerHTML = "WIP: 2 Paras should come about Daddy and Mummy";
+		}
+		function NLRbabaipinni() {
+		document.getElementById("demo").innerHTML = "WIP: 2 Paras should come about NLR babai and Indira Pinni";
+		}
+		function Rajababaipinni() {
+		document.getElementById("demo").innerHTML = "WIP: 2 Paras should come about Raja babai and Satyavathi Pinni";
+		}
    </script>
   </head>
   <body>
@@ -71,6 +86,9 @@
        <p>Will explain each and every one in my family.Their personality traits.What they mean to me..</p>
        </section>
        <div id='chart_div'></div>
+	<section class="main-content">
+		<p id='demo'></p>
+	  </section>
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/abdv17/Wish.github.io">Gaddam&#39;s Family</a> is maintained by <a href="https://github.com/abdv17">abdv17</a>.</span>
         
