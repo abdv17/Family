@@ -22,6 +22,20 @@
           [{v:'Tirupathaiyya,Chennamma', f:'Tirupathaiyya,Chennamma<div style="color:red; font-style:italic"><button onclick="JejiyaJeji()" type="button" style="color:Red";>Jejiya,Jeji</button></div>'},
            '', 'The President'],
           [{v:'Prasad,Chennamma', f:'Prasad,Chennamma<div style="color:red; font-style:italic"><button onclick="PedananaPedamma()" type="button" style="color:Red";>Pedanana,Pedamma</button></div>'},
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {packages:["orgchart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('string', 'Manager');
+        data.addColumn('string', 'ToolTip');
+        // For each orgchart box, provide the name, manager, and tooltip to show.
+        data.addRows([
+          [{v:'Tirupathaiyya,Chennamma', f:'Tirupathaiyya,Chennamma<div style="color:red; font-style:italic"><button onclick="JejiyaJeji()" type="button" style="color:Red";>Jejiya,Jeji</button></div>'},
+           '', 'The President'],
+          [{v:'Prasad,Chennamma', f:'Prasad,Chennamma<div style="color:red; font-style:italic"><button onclick="PedananaPedamma()" type="button" style="color:Red";>Pedanana,Pedamma</button></div>'},
            'Tirupathaiyya,Chennamma', 'Pedanana,Pedamma'],
 		  [{v:'Lakshmi Narayana,Venkata Narayanamma', f:'Lakshmi Narayana,Venkata Narayanamma<div style="color:red; font-style:italic"><button onclick="DaddyMummy()" type="button" style="color:Red";>Daddy,Mummy</button></div>'},
            'Tirupathaiyya,Chennamma', 'Daddy,Mummy'],
@@ -30,25 +44,25 @@
 		  [{v:'Rajendra,Satyavathi', f:'Rajendra,Satyavathi<div style="color:red; font-style:italic"><button onclick="Rajababaipinni()" type="button" style="color:Red";>Raja Babai,Satyavathi Pinni</button></div>'},
            'Tirupathaiyya,Chennamma', 'Raja Babai,Satyavathi Pinni'],
 		   
-		  [{v:'Venu Gopal,Manoji', f:'Venu,Manoji<div style="color:red; font-style:italic">Venu Annaya,Vadina</div>'},
+		  [{v:'Venu Gopal,Manoji', f:'Venu,Manoji<div style="color:red; font-style:italic"><button onclick="VenuAnnaVadina()" type="button" style="color:Red";>Venu Anna,Vadina</button></div>'},
            'Prasad,Chennamma', 'Venu Annaya,Vadina'],
-		  [{v:'Narayana,China Narayana', f:'Narayana,China Narayana<div style="color:red; font-style:italic">Narayanakka,Mavayya</div>'},
+		  [{v:'Narayanamma,China Narayana', f:'Narayanamma,China Narayana<div style="color:red; font-style:italic"><button onclick="Narayana()" type="button" style="color:Red";>Narayanakka,Narayana Mavayya</button></div>'},
            'Prasad,Chennamma', 'Narayanakka,Mavayya'],
-		  [{v:'Padma,Naveen', f:'Padma,Naveen<div style="color:red; font-style:italic">Padmakka,Naveen Bava</div>'},
+		  [{v:'Padma,Naveen', f:'Padma,Naveen<div style="color:red; font-style:italic"><button onclick="PadmaNaveen()" type="button" style="color:Red";>Padmakka,Naveen Bava</button></div>'},
            'Prasad,Chennamma', 'Padmakka,Naveen Bava'],
-		  [{v:'Mohan', f:'Mohan<div style="color:red; font-style:italic">Chinnodu</div>'},
+		  [{v:'Mohan', f:'Mohan<div style="color:red; font-style:italic"><button onclick="Mohan()" type="button" style="color:Red";>Chinnodu</button></div>'},
            'Prasad,Chennamma', 'Chinnodu'],
-		  [{v:'Sai Kumar', f:'Sai Kumar<div style="color:red; font-style:italic">Me</div>'},
+		  [{v:'Sai Kumar', f:'Sai Kumar<div style="color:red; font-style:italic"><button onclick="Me()" type="button" style="color:Red";>Me</button></div>'},
            'Lakshmi Narayana,Venkata Narayanamma', 'Me'],
-		  [{v:'Jyothsna,Mahesh', f:'Jyothsna,Mahesh<div style="color:red; font-style:italic">Bujji,Nani</div>'},
+		  [{v:'Jyothsna,Mahesh', f:'Jyothsna,Mahesh<div style="color:red; font-style:italic"><button onclick="BujjiNani()" type="button" style="color:Red";>Bujji,Nani</button></div>'},
            'Lakshmi Narayana,Venkata Narayanamma', 'Bujji,Nani'],
-		  [{v:'Pavan Kumar,Prasanna', f:'Pavan Kumar,Prasanna<div style="color:red; font-style:italic">Pavan Anna,Vadina</div>'},
+		  [{v:'Pavan Kumar,Prasanna', f:'Pavan Kumar,Prasanna<div style="color:red; font-style:italic"><button onclick="PavanPrasanna()" type="button" style="color:Red";>Pavan Anna,Prasanna Vadina</button></div>'},
            'Venkateswarlu,Indiramma', 'Pavan Anna,Vadina'],
-		  [{v:'Varun', f:'Varun<div style="color:red; font-style:italic">Varun Anna</div>'},
+		  [{v:'Varun', f:'Varun<div style="color:red; font-style:italic"><button onclick="Varun()" type="button" style="color:Red";>Varun Anna</button></div>'},
            'Venkateswarlu,Indiramma', 'Varun Anna'],
-		  [{v:'Prasanna', f:'Prasanna<div style="color:red; font-style:italic">Prasanna</div>'},
+		  [{v:'Prasanna', f:'Prasanna<div style="color:red; font-style:italic"><button onclick="Prasanna()" type="button" style="color:Red";>Prasanna</button></div>'},
            'Rajendra,Satyavathi', 'Prasanna'],
-		  [{v:'Gowtham', f:'Gowtham<div style="color:red; font-style:italic">Gowtham</div>'},
+		  [{v:'Gowtham', f:'Gowtham<div style="color:red; font-style:italic"><button onclick="Gowtham()" type="button" style="color:Red";>Gowtham</button></div>'},
            'Rajendra,Satyavathi', 'Gowtham'],
         ]);
         // Create the chart.
@@ -57,7 +71,7 @@
         chart.draw(data, {allowHtml:true});
       }
 		function JejiyaJeji() {
-		document.getElementById("demo").innerHTML = "WIP: 2 Paras should come about jejiya and jeji";
+		document.getElementById("demo").innerHTML = "WIP: 2 Paras should come about Jejiya and Jeji";
 		}
 		function PedananaPedamma() {
 		document.getElementById("demo").innerHTML = "WIP: 2 Paras should come about Pedanana and Pedamma";
@@ -66,10 +80,40 @@
 		document.getElementById("demo").innerHTML = "WIP: 2 Paras should come about Daddy and Mummy";
 		}
 		function NLRbabaipinni() {
-		document.getElementById("demo").innerHTML = "WIP: 2 Paras should come about NLR babai and Indira Pinni";
+		document.getElementById("demo").innerHTML = "WIP: 2 Paras should come about NLR Babai and Indira Pinni";
 		}
 		function Rajababaipinni() {
-		document.getElementById("demo").innerHTML = "WIP: 2 Paras should come about Raja babai and Satyavathi Pinni";
+		document.getElementById("demo").innerHTML = "WIP: 2 Paras should come about Raja Babai and Satyavathi Pinni";
+		}
+		function VenuAnnaVadina() {
+		document.getElementById("demo").innerHTML = "WIP: 2 Paras should come about Venu Annaya and Vadina";
+		}
+		function Narayana() {
+		document.getElementById("demo").innerHTML = "WIP: 2 Paras should come about Narayanakka and Narayana Mavayya";
+		}
+		function PadmaNaveen() {
+		document.getElementById("demo").innerHTML = "WIP: 2 Paras should come about Padmakka and Naveen Bava";
+		}
+		function Mohan() {
+		document.getElementById("demo").innerHTML = "WIP: 1 Para should come about Mohan";
+		}
+		function Me() {
+		document.getElementById("demo").innerHTML = "WIP: 1 Para should come about Sai Kumar";
+		}
+		function BujjiNani() {
+		document.getElementById("demo").innerHTML = "WIP: 2 Paras should come about Bujji and Nani";
+		}
+		function PavanPrasanna() {
+		document.getElementById("demo").innerHTML = "WIP: 2 Paras should come about PavanAnna and PrasannaVadina";
+		}
+		function Varun() {
+		document.getElementById("demo").innerHTML = "WIP: 1 Para should come about Varun Anna";
+		}
+		function Prasanna() {
+		document.getElementById("demo").innerHTML = "WIP: 1 Para should come about Prasanna";
+		}
+		function Gowtham() {
+		document.getElementById("demo").innerHTML = "WIP: 1 Para should come about Gowtham";
 		}
    </script>
   </head>
