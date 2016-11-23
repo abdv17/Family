@@ -76,44 +76,115 @@
 		function PedananaPedamma() {
 		document.getElementById("demo").innerHTML = "WIP: 2 Paras should come about Pedanana and Pedamma";
 		}
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {packages:["orgchart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('string', 'Manager');
+        data.addColumn('string', 'ToolTip');
+        // For each orgchart box, provide the name, manager, and tooltip to show.
+        data.addRows([
+          [{v:'Tirupathaiyya,Chennamma', f:'Tirupathaiyya,Chennamma<div style="color:red; font-style:italic"><button onclick="JejiyaJeji()" type="button" style="color:Red";>Jejiya,Jeji</button></div>'},
+           '', 'The President'],
+          [{v:'Prasad,Chennamma', f:'Prasad,Chennamma<div style="color:red; font-style:italic"><button onclick="PedananaPedamma()" type="button" style="color:Red";>Pedanana,Pedamma</button></div>'},
+           'Tirupathaiyya,Chennamma', 'Pedanana,Pedamma'],
+		  [{v:'Lakshmi Narayana,Venkata Narayanamma', f:'Lakshmi Narayana,Venkata Narayanamma<div style="color:red; font-style:italic"><button onclick="DaddyMummy()" type="button" style="color:Red";>Daddy,Mummy</button></div>'},
+           'Tirupathaiyya,Chennamma', 'Daddy,Mummy'],
+		  [{v:'Venkateswarlu,Indiramma', f:'Venkateswarlu,Indiramma<div style="color:red; font-style:italic"><button onclick="NLRbabaipinni()" type="button" style="color:Red";>NLR Babai,Indira Pinni</button></div>'},
+           'Tirupathaiyya,Chennamma', 'NLR babai,,Indira Pinni'],
+		  [{v:'Rajendra,Satyavathi', f:'Rajendra,Satyavathi<div style="color:red; font-style:italic"><button onclick="Rajababaipinni()" type="button" style="color:Red";>Raja Babai,Satyavathi Pinni</button></div>'},
+           'Tirupathaiyya,Chennamma', 'Raja Babai,Satyavathi Pinni'],
+		   
+		  [{v:'Venu Gopal,Manoji', f:'Venu,Manoji<div style="color:red; font-style:italic"><button onclick="VenuAnnaVadina()" type="button" style="color:Red";>Venu Anna,Vadina</button></div>'},
+           'Prasad,Chennamma', 'Venu Annaya,Vadina'],
+		  [{v:'Narayanamma,China Narayana', f:'Narayanamma,China Narayana<div style="color:red; font-style:italic"><button onclick="Narayana()" type="button" style="color:Red";>Narayanakka,Narayana Mavayya</button></div>'},
+           'Prasad,Chennamma', 'Narayanakka,Mavayya'],
+		  [{v:'Padma,Naveen', f:'Padma,Naveen<div style="color:red; font-style:italic"><button onclick="PadmaNaveen()" type="button" style="color:Red";>Padmakka,Naveen Bava</button></div>'},
+           'Prasad,Chennamma', 'Padmakka,Naveen Bava'],
+		  [{v:'Mohan', f:'Mohan<div style="color:red; font-style:italic"><button onclick="Mohan()" type="button" style="color:Red";>Chinnodu</button></div>'},
+           'Prasad,Chennamma', 'Chinnodu'],
+		  [{v:'Sai Kumar', f:'Sai Kumar<div style="color:red; font-style:italic"><button onclick="Me()" type="button" style="color:Red";>Me</button></div>'},
+           'Lakshmi Narayana,Venkata Narayanamma', 'Me'],
+		  [{v:'Jyothsna,Mahesh', f:'Jyothsna,Mahesh<div style="color:red; font-style:italic"><button onclick="BujjiNani()" type="button" style="color:Red";>Bujji,Nani</button></div>'},
+           'Lakshmi Narayana,Venkata Narayanamma', 'Bujji,Nani'],
+		  [{v:'Pavan Kumar,Prasanna', f:'Pavan Kumar,Prasanna<div style="color:red; font-style:italic"><button onclick="PavanPrasanna()" type="button" style="color:Red";>Pavan Anna,Prasanna Vadina</button></div>'},
+           'Venkateswarlu,Indiramma', 'Pavan Anna,Vadina'],
+		  [{v:'Varun', f:'Varun<div style="color:red; font-style:italic"><button onclick="Varun()" type="button" style="color:Red";>Varun Anna</button></div>'},
+           'Venkateswarlu,Indiramma', 'Varun Anna'],
+		  [{v:'Prasanna', f:'Prasanna<div style="color:red; font-style:italic"><button onclick="Prasanna()" type="button" style="color:Red";>Prasanna</button></div>'},
+           'Rajendra,Satyavathi', 'Prasanna'],
+		  [{v:'Gowtham', f:'Gowtham<div style="color:red; font-style:italic"><button onclick="Gowtham()" type="button" style="color:Red";>Gowtham</button></div>'},
+           'Rajendra,Satyavathi', 'Gowtham'],
+        ]);
+        // Create the chart.
+        var chart = new google.visualization.OrgChart(document.getElementById('chart_div'));
+        // Draw the chart, setting the allowHtml option to true for the tooltips.
+        chart.draw(data, {allowHtml:true});
+      }
+		function JejiyaJeji() {
+		document.getElementById("demo").innerHTML = "Jejiya:: The very first impression of Jejiya on me is Very Angry.As I grew, came to know that Jejiya worked hard to bring family into this shape.He is always takes pride by farming more produce than competition.In that process indulged his sons into farming.Agreed and allowed them to go school daily.Thanks Jejiya.Poor Jejiya,lacked an awareness on future and urbanisation.Who am I to blame him.He got enough cultivable lands.Always a result oriented.He always likes and admires genuinity and hard work in other people.Never let relative or friend empty stomach/hand when they paid visit.He is always surrounded by people/friends/relatives.He is a people's man,may be because he is kind to every one.";
+		document.getElementById("demo1").innerHTML = "Jeji:: First person to come into our family.No facilities,no plenty of income,hard to imagine how she brought up her 5 children.She is tall,strong both mental and physical.Still walks a kilometre daily to serve a hand in agriculture.Heard that there are few rifts with jejiya in early marriage life(May be because of jejiya temper!).Learned a lot in her 60 years of marriage life.During my last visit to her,she made me a lemon juice which is no ordinary cause,never had one in my 24 years of life.";
+		}
+		function PedananaPedamma() {
+		document.getElementById("demo").innerHTML = "Pedanana:: I grew up by looking at Pedanana as a Very strong and stubborn person.Later on with more interaction with him,I found that he is very soft,delicate inside.Just like a coconut.He is the arguably best farmer that my family produced ever.Man with a enormous amounts of patience.Travels very frequently between Maharashtra and TKG Padu.Always says to me earn quite enough money so that can help one.Afraid of taking impacting decisions and seldom comes late with a perfect decision.";
+		
+		
+		document.getElementById("demo1").innerHTML = "Pedamma:: First person to come into Gaddam's family after Jeji.Quite interesting both are having same name.Bad with cooking few specific dishes and frankly agrees to the fact that she is not best cook in the family.Liked that frankness.Her husband and children are her family.She dont know anything except cooking,washing,praying god.";
+		}
 		function DaddyMummy() {
 		document.getElementById("demo").innerHTML = "WIP: 2 Paras should come about Daddy and Mummy";
+		document.getElementById("demo1").innerHTML = "WIP: 2 Paras should come about Daddy and Mummy"
 		}
 		function NLRbabaipinni() {
 		document.getElementById("demo").innerHTML = "WIP: 2 Paras should come about NLR Babai and Indira Pinni";
+		document.getElementById("demo1").innerHTML = "WIP: 2 Paras should come about NLR Babai and Indira Pinni";
 		}
 		function Rajababaipinni() {
 		document.getElementById("demo").innerHTML = "WIP: 2 Paras should come about Raja Babai and Satyavathi Pinni";
+		document.getElementById("demo1").innerHTML = "WIP: 2 Paras should come about Raja Babai and Satyavathi Pinni";
 		}
 		function VenuAnnaVadina() {
 		document.getElementById("demo").innerHTML = "WIP: 2 Paras should come about Venu Annaya and Vadina";
+		document.getElementById("demo1").innerHTML = "WIP: 2 Paras should come about Venu Annaya and Vadina";
 		}
 		function Narayana() {
 		document.getElementById("demo").innerHTML = "WIP: 2 Paras should come about Narayanakka and Narayana Mavayya";
+		document.getElementById("demo1").innerHTML = "WIP: 2 Paras should come about Narayanakka and Narayana Mavayya";
 		}
 		function PadmaNaveen() {
 		document.getElementById("demo").innerHTML = "WIP: 2 Paras should come about Padmakka and Naveen Bava";
+		document.getElementById("demo1").innerHTML = "WIP: 2 Paras should come about Padmakka and Naveen Bava";
 		}
 		function Mohan() {
 		document.getElementById("demo").innerHTML = "WIP: 1 Para should come about Mohan";
+		document.getElementById("demo1").innerHTML = "";
 		}
 		function Me() {
 		document.getElementById("demo").innerHTML = "WIP: 1 Para should come about Sai Kumar";
+		document.getElementById("demo1").innerHTML = "";
 		}
 		function BujjiNani() {
 		document.getElementById("demo").innerHTML = "WIP: 2 Paras should come about Bujji and Nani";
+		document.getElementById("demo1").innerHTML = "WIP: 2 Paras should come about Bujji and Nani";
 		}
 		function PavanPrasanna() {
 		document.getElementById("demo").innerHTML = "WIP: 2 Paras should come about PavanAnna and PrasannaVadina";
+		document.getElementById("demo1").innerHTML = "WIP: 2 Paras should come about PavanAnna and PrasannaVadina";
 		}
 		function Varun() {
 		document.getElementById("demo").innerHTML = "WIP: 1 Para should come about Varun Anna";
+		document.getElementById("demo1").innerHTML = "";
 		}
 		function Prasanna() {
 		document.getElementById("demo").innerHTML = "WIP: 1 Para should come about Prasanna";
+		document.getElementById("demo1").innerHTML = "";
 		}
 		function Gowtham() {
 		document.getElementById("demo").innerHTML = "WIP: 1 Para should come about Gowtham";
+		document.getElementById("demo1").innerHTML = "";
 		}
    </script>
   </head>
@@ -132,6 +203,7 @@
        <div id='chart_div'></div>
 	<section class="main-content">
 		<p id='demo'></p>
+		<p id='demo1'></p>
 	  </section>
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/abdv17/Wish.github.io">Gaddam&#39;s Family</a> is maintained by <a href="https://github.com/abdv17">abdv17</a>.</span>
