@@ -1,4 +1,1 @@
-alert("welcome");
-
-var myStr = "Sai";
-console.log(myStr);
+alert("Welcome to My Family");
