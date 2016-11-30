@@ -1,8 +1,8 @@
 
 function main(){
 // $('.skillset').hide();
-  alert("Welcome to My Family");
- // $('#chart_div').fadeIn(10000);
+ // alert("Welcome to My Family");
+  $('#chart_div').fadeIn(1000);
 //  $('.projects').hide();
  // $('.projects-button').on('click',function(){
    // $(this).next().toggle();
