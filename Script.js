@@ -9,6 +9,6 @@ function main(){
 //    $(this).next().slideToggle(400);
 //    $(this).toggleClass('active');
 //    $(this).text('Projects Viewed');
-  });
+//  });
 }
 $(document).ready(main);
