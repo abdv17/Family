@@ -50,13 +50,13 @@ Environment Variable: XHQ_ALLOW_VIEWSERVER = True to activate HTML5 viewer
 *******************************************************************************************
 
 
-*************************************************
-Assigned Functional Areas::			*
-1.Design-time Drawing items			*
-2.Design-time Value items			*
-3.Runtime Drawing Items				*
-4.Runtime Value Items				*
-5.Runtime Printing				*
-6.Design-time View Details			*
-*************************************************
+*****************************************************************************************
+Assigned Functional Areas::								*
+1.Presentation Building>>>View Builder>>>Design-time Drawing items			*
+2.Presentation Building>>>View Builder>>>Design-time Value items			*
+3.Visualization>>>View Runtime>>>Runtime Drawing Items					*
+4.Visualization>>>View Runtime>>>Runtime Value Items					*
+5.Visualization>>>View Runtime>>>Runtime Printing					*
+6.Presentation Building>>>View Builder>>>Design-time View Details			*
+*****************************************************************************************
 
